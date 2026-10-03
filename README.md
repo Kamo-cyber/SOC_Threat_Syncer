@@ -45,7 +45,7 @@ This final project highlights how my Python and software engineering skills have
 
 * **Web Portal Validation:** During browser testing, the MITRE portal threw errors because of strict layout requirements. I audited my output structure, aligned it with version `4.5` of the schema, configured a proper 6-character hex color code (`#f00000`), and successfully unblocked the engine to render all 11 threat cells automatically.
 
-* ## 🖥️ MITRE ATT&CK Navigator Preview
+* ## MITRE ATT&CK Navigator Preview
 
 In addtion, the dashboard visualization created by uploading the generated `attack_layer.json` file directly into the **MITRE ATT&CK Navigator**. The platform successfully processes our automated threat data, highlighting the flagged technique (**System Owner/User Discovery**) in red for immediate visual tracking.
 
