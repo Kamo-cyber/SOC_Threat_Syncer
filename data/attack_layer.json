@@ -1,0 +1,73 @@
+{
+    "name": "SOC Ingestion Layer Report",
+    "version": "4.5",
+    "domain": "enterprise-attack",
+    "techniques": [
+        {
+            "techniqueID": "T1053.005",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1003.001",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1071.001",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1105",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1490",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1078.002",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1547.001",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1204.002",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1033",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1136.001",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        },
+        {
+            "techniqueID": "T1059.001",
+            "enabled": true,
+            "color": "#f00000",
+            "comment": "Malicious process execution signature detected in telemetry stream"
+        }
+    ]
+}

